@@ -34,17 +34,15 @@ await retry(() => fetch('/foobar.json'), {
 
 ## Comparsion
 
-| Package                | TS  | ESM | Bundle Size                                                                  |
-| ---------------------- | --- | --- | ---------------------------------------------------------------------------- |
-| @guoyunhe/retry        | ✅  | ✅  | ![bundlephobia](https://badgen.net/bundlephobia/minzip/@guoyunhe/retry)      |
-| [retry]                | ✅  | ❌  | ![bundlephobia](https://badgen.net/bundlephobia/minzip/retry)                |
-| [p-retry]              | ✅  | ✅  | ![bundlephobia](https://badgen.net/bundlephobia/minzip/p-retry)              |
-| [async-retry]          | ✅  | ❌  | ![bundlephobia](https://badgen.net/bundlephobia/minzip/async-retry)          |
-| [retry-request]        | ✅  | ❌  | ![bundlephobia](https://badgen.net/bundlephobia/minzip/retry-request)        |
-| [@humanwhocodes/retry] | ✅  | ✅  | ![bundlephobia](https://badgen.net/bundlephobia/minzip/@humanwhocodes/retry) |
+| Package                | TS  | ESM | Promise | Bundle Size                                                                  |
+| ---------------------- | --- | --- | ------- | ---------------------------------------------------------------------------- |
+| @guoyunhe/retry        | ✅  | ✅  | ✅      | ![bundlephobia](https://badgen.net/bundlephobia/minzip/@guoyunhe/retry)      |
+| [@humanwhocodes/retry] | ✅  | ✅  | ✅      | ![bundlephobia](https://badgen.net/bundlephobia/minzip/@humanwhocodes/retry) |
+| [p-retry]              | ✅  | ✅  | ✅      | ![bundlephobia](https://badgen.net/bundlephobia/minzip/p-retry)              |
+| [async-retry]          | ✅  | ❌  | ✅      | ![bundlephobia](https://badgen.net/bundlephobia/minzip/async-retry)          |
+| [retry]                | ✅  | ❌  | ❌      | ![bundlephobia](https://badgen.net/bundlephobia/minzip/retry)                |
 
-[retry]: https://www.npmjs.com/package/retry
+[@humanwhocodes/retry]: https://www.npmjs.com/package/@humanwhocodes/retry
 [p-retry]: https://www.npmjs.com/package/p-retry
 [async-retry]: https://www.npmjs.com/package/async-retry
-[retry-request]: https://www.npmjs.com/package/retry-request
-[@humanwhocodes/retry]: https://www.npmjs.com/package/@humanwhocodes/retry
+[retry]: https://www.npmjs.com/package/retry
