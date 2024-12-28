@@ -1,4 +1,14 @@
 {
+  "name": "@guoyunhe/retry",
+  "description": "a better retry function",
+  "keywords": [
+    "retry",
+    "promise",
+    "async",
+    "await",
+    "error",
+    "failed"
+  ],
   "homepage": "https://github.com/guoyunhe/retry#readme",
   "bugs": {
     "url": "https://github.com/guoyunhe/retry/issues"
@@ -8,6 +18,7 @@
     "url": "git+https://github.com/guoyunhe/retry.git"
   },
   "funding": "https://github.com/sponsors/guoyunhe",
+  "license": "MIT",
   "author": {
     "name": "Guo Yunhe",
     "email": "i@guoyunhe.me"
