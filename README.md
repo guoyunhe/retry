@@ -1,5 +1,7 @@
 # @guoyunhe/retry
 
+[![bundlephobia](https://badgen.net/bundlephobia/minzip/@guoyunhe/retry)](https://bundlephobia.com/package/@guoyunhe/retry)
+
 a better retry function
 
 ## Installation
@@ -29,3 +31,20 @@ await retry(() => fetch('/foobar.json'), {
   retryDelay: (retryIndex) => 1000 * Math.pow(retryIndex, 2);
 });
 ```
+
+## Comparsion
+
+|                        | TS  | ESM | Bundle Size                                                                  | Performance |
+| ---------------------- | --- | --- | ---------------------------------------------------------------------------- | ----------- |
+| @guoyunhe/retry        | ✅  | ✅  | ![bundlephobia](https://badgen.net/bundlephobia/minzip/@guoyunhe/retry)      |             |
+| [retry]                | ✅  | ❌  | ![bundlephobia](https://badgen.net/bundlephobia/minzip/retry)                |             |
+| [p-retry]              | ✅  | ✅  | ![bundlephobia](https://badgen.net/bundlephobia/minzip/p-retry)              |             |
+| [async-retry]          | ✅  | ❌  | ![bundlephobia](https://badgen.net/bundlephobia/minzip/async-retry)          |             |
+| [retry-request]        | ✅  | ❌  | ![bundlephobia](https://badgen.net/bundlephobia/minzip/retry-request)        |             |
+| [@humanwhocodes/retry] | ✅  | ✅  | ![bundlephobia](https://badgen.net/bundlephobia/minzip/@humanwhocodes/retry) |             |
+
+[retry]: https://www.npmjs.com/package/retry
+[p-retry]: https://www.npmjs.com/package/p-retry
+[async-retry]: https://www.npmjs.com/package/async-retry
+[retry-request]: https://www.npmjs.com/package/retry-request
+[@humanwhocodes/retry]: https://www.npmjs.com/package/@humanwhocodes/retry
