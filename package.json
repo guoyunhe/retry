@@ -63,5 +63,8 @@
     "doc": {
       "basename": "/retry/"
     }
+  },
+  "dependencies": {
+    "@guoyunhe/sleep": "^1.0.0"
   }
 }

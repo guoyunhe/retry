@@ -1,3 +1,5 @@
+import { sleep } from '@guoyunhe/sleep';
+
 export interface RetryOptions {
   /**
    * How many times to retry.
@@ -34,10 +36,4 @@ export async function retry<T>(
       }
     }
   }
-}
-
-function sleep(ms: number) {
-  return new Promise(function (resolve) {
-    setTimeout(resolve, ms);
-  });
 }

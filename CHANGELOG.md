@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0 - 2024-12-28
+
+- Moved internal `sleep()` function to a package `@guoyunhe/sleep`
+
 ## 1.0.0 - 2024-12-28
 
 - Added `retry()` function
