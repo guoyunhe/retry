@@ -7,7 +7,7 @@ export interface RetryOptions {
    */
   retries?: number;
   /**
-   * Decide to retry or not based on catched error.
+   * Decide whether to retry or not by checking catched error.
    * @default () => true
    */
   shouldRetry?: (e: Error) => boolean;
