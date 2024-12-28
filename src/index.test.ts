@@ -1,11 +1,16 @@
 import { retry } from '.';
 
 describe('retry', () => {
-  describe('normal', async () => {
-    expect(retry('Foo', 'Bar')).toBe('Foo Bar');
-  });
-
-  describe('lastName upper case', async () => {
-    expect(retry('Foo', 'Bar', { lastNameUpperCase: true })).toBe('Foo BAR');
+  it('default', async () => {
+    const run = vitest.fn();
+    try {
+      await retry(async () => {
+        run();
+        throw new Error('test');
+      });
+    } catch {
+      // skip
+    }
+    expect(run).toBeCalledTimes(6);
   });
 });
