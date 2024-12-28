@@ -1,0 +1,55 @@
+{
+  "homepage": "https://github.com/guoyunhe/retry#readme",
+  "bugs": {
+    "url": "https://github.com/guoyunhe/retry/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guoyunhe/retry.git"
+  },
+  "funding": "https://github.com/sponsors/guoyunhe",
+  "author": {
+    "name": "Guo Yunhe",
+    "email": "i@guoyunhe.me"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rive build",
+    "build:watch": "rive build --watch",
+    "lint": "rive lint",
+    "lint:fix": "rive lint --fix",
+    "start": "rive start",
+    "test": "rive test",
+    "test:ui": "rive test --ui",
+    "test:watch": "rive test --watch"
+  },
+  "prettier": "prettier-config-rive",
+  "eslintConfig": {
+    "extends": "eslint-config-rive"
+  },
+  "devDependencies": {
+    "@mdx-js/react": "^3.0.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "react": "^18.2.0",
+    "react-doc-ui": "^2.0.0",
+    "react-dom": "^18.2.0",
+    "rive": "^2.0.0",
+    "typescript": "^5.0.0"
+  },
+  "rive": {
+    "template": "base",
+    "doc": {
+      "basename": "/retry/"
+    }
+  }
+}
