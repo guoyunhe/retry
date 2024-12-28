@@ -1,5 +1,6 @@
 {
   "name": "@guoyunhe/retry",
+  "version": "1.0.0",
   "description": "a better retry function",
   "keywords": [
     "retry",
@@ -62,6 +63,5 @@
     "doc": {
       "basename": "/retry/"
     }
-  },
-  "version": "1.0.0"
+  }
 }
