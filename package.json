@@ -62,5 +62,6 @@
     "doc": {
       "basename": "/retry/"
     }
-  }
+  },
+  "version": "1.0.0"
 }
