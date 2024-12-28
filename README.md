@@ -37,13 +37,13 @@ await retry(() => fetch('/foobar.json'), {
 
 ## Comparsion
 
-| Package                | TS  | ESM | Promise | Bundle Size                                                                  |
-| ---------------------- | --- | --- | ------- | ---------------------------------------------------------------------------- |
-| @guoyunhe/retry        | ✅  | ✅  | ✅      | ![bundlephobia](https://badgen.net/bundlephobia/minzip/@guoyunhe/retry)      |
-| [@humanwhocodes/retry] | ✅  | ✅  | ✅      | ![bundlephobia](https://badgen.net/bundlephobia/minzip/@humanwhocodes/retry) |
-| [p-retry]              | ✅  | ✅  | ✅      | ![bundlephobia](https://badgen.net/bundlephobia/minzip/p-retry)              |
-| [async-retry]          | ✅  | ❌  | ✅      | ![bundlephobia](https://badgen.net/bundlephobia/minzip/async-retry)          |
-| [retry]                | ✅  | ❌  | ❌      | ![bundlephobia](https://badgen.net/bundlephobia/minzip/retry)                |
+| Package                | TS  | ESM | Promise | Bundle Size                                                                     |
+| ---------------------- | --- | --- | ------- | ------------------------------------------------------------------------------- |
+| @guoyunhe/retry        | ✅  | ✅  | ✅      | ![Bundle size](https://img.shields.io/bundlephobia/minzip/@guoyunhe/retry)      |
+| [@humanwhocodes/retry] | ✅  | ✅  | ✅      | ![Bundle size](https://img.shields.io/bundlephobia/minzip/@humanwhocodes/retry) |
+| [p-retry]              | ✅  | ✅  | ✅      | ![Bundle size](https://img.shields.io/bundlephobia/minzip/p-retry)              |
+| [async-retry]          | ✅  | ❌  | ✅      | ![Bundle size](https://img.shields.io/bundlephobia/minzip/async-retry)          |
+| [retry]                | ✅  | ❌  | ❌      | ![Bundle size](https://img.shields.io/bundlephobia/minzip/retry)                |
 
 [@humanwhocodes/retry]: https://www.npmjs.com/package/@humanwhocodes/retry
 [p-retry]: https://www.npmjs.com/package/p-retry
