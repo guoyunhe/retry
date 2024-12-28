@@ -1,6 +1,8 @@
 # @guoyunhe/retry
 
-[![bundlephobia](https://badgen.net/bundlephobia/minzip/@guoyunhe/retry)](https://bundlephobia.com/package/@guoyunhe/retry)
+![Version](https://img.shields.io/npm/v/@guoyunhe/retry)
+![Downloads](https://img.shields.io/npm/dw/@guoyunhe/retry)
+![Bundle size](https://img.shields.io/bundlephobia/minzip/@guoyunhe/retry)
 
 a better retry function
 
