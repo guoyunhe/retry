@@ -35,7 +35,7 @@ await retry(() => fetch('/foobar.json'), {
 });
 ```
 
-## Comparsion
+## Comparison
 
 | Package                | TS  | ESM | Promise | Bundle Size                                                                     |
 | ---------------------- | --- | --- | ------- | ------------------------------------------------------------------------------- |
