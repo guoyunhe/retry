@@ -14,6 +14,10 @@ npm install --save @guoyunhe/retry
 
 ## Examples
 
+### Basic
+
+The most common usage of retry is to retry failed HTTP requests (only GET usually).
+
 ```js
 import { retry } from '@guoyunhe/retry';
 
@@ -33,6 +37,25 @@ await retry(() => fetch('/foobar.json'), {
   // retryIndex starts from 1, not 0
   retryDelay: (retryIndex) => 1000 * Math.pow(retryIndex, 2);
 });
+```
+
+### React
+
+Large projects use `React.lazy()` to do code splitting and lazy loading. However, dynamic
+`import()` may fail due to netowrk or server issues. Retry can reduce the chance of this
+kind of failures.
+
+```jsx static
+import { lazy, Suspense } from 'react';
+import { retry } from '@guoyunhe/retry';
+
+const MyPage = lazy(() => retry(() => import('./my-page.js')));
+
+render(
+  <Suspense>
+    <MyPage />
+  </Suspense>,
+);
 ```
 
 ## Comparison
